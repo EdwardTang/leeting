@@ -41,7 +41,8 @@ public class Solution {
         // if(startIndex == nums.length)
         // {
         //     return;
-        // }
+        // } 
+        // equal to  for (int i = startIndex; i < nums.length; i++)
 
         //  The breakdown of recursion
         for (int i = startIndex; i < nums.length; i++)
