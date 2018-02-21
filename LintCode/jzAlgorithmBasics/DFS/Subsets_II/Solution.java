@@ -33,7 +33,7 @@ public class Solution {
         
         for (int i = startIndex; i < nums.length; i++)
         {
-            //为什么会有重复：
+            //为什么会有重复：取 nums = [1, 2, 2]为例
             //                                                                                   [       ]
             //                                                                                 //        \\
             //                                                                               [1]          [2]
