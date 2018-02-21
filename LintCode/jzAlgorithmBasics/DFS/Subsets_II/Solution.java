@@ -33,7 +33,14 @@ public class Solution {
         
         for (int i = startIndex; i < nums.length; i++)
         {
-            // 如何去重
+            //为什么会有重复：
+            //                                                                                   [       ]
+            //                                                                                 //        \\
+            //                                                                               [1]          [2]
+            //                                                                              //           //
+            //   从叶节点[1,2,2] 回溯到[1,2]这一步时，for loop 中 i= startIndex+1， ->      [1,2]         [2, 2]
+            //   就会再取一次重复的 nums[ startIndex + 1] = 2                              //                                                                   //
+            //                                                                       [1, 2, 2]
             if(i != startIndex && nums[i - 1] == nums[i])
             {
                continue;
